@@ -54,7 +54,7 @@ String API_KEY = "YOUR_API_KEY";
 
         try {
         WeatherClientFactory factory = new WeatherClientFactory();
-        WeatherClient weatherClient = factory.createWeatherClient(API_KEY, ModeType.ON_DEMAND);
+        WeatherClient weatherClient = factory.createWeatherClient(YOUR_API_KEY, ModeType.ON_DEMAND);
         System.out.println(weatherClient.getWeather("Berlin"));
         } catch (WeatherServiceException e) {
         System.out.println(e.getMessage());
@@ -68,7 +68,7 @@ String API_KEY = "YOUR_API_KEY";
 
         try {
         WeatherClientFactory factory = new WeatherClientFactory();
-        WeatherClient weatherClient = factory.createWeatherClient(API_KEY, ModeType.POLLING);
+        WeatherClient weatherClient = factory.createWeatherClient(YOUR_API_KEY, ModeType.POLLING);
         System.out.println(weatherClient.getWeather("London"));
         } catch (WeatherServiceException e) {
         System.out.println(e.getMessage());
